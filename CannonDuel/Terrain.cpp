@@ -11,7 +11,7 @@ Terrain::Terrain(int numOfPoints, int smoothness, sf::RenderWindow& window) :
 	{
 		this->edgePoints.clear();	
 
-		float incr = static_cast<float>(window.getSize().x) / numOfPoints;
+		float incr = static_cast<float>(window.getSize().x) / this->numOfPoints;
 		
 		//Noise initial value
 		float n = Utils::randomFloat(0.f, 1000.f);
@@ -50,8 +50,8 @@ void Terrain::explosionEffect(sf::Vector2f explosionPos, int force) {
 		if (Utils::distance(this->points[i].position, explosionPos) < 100.f) {
 			float angle = atan2(this->points[i].position.y - explosionPos.y, this->points[i].position.x - explosionPos.x);
 			//float angle = atan2(explosionPos.y - this->points[i].position.y, explosionPos.x - this->points[i].position.x);
-			this->points[i].position.x += cos(angle) * force;
 			float nextYpos = this->points[i].position.y + sin(angle) * force;
+			this->points[i].position.x += cos(angle) * force;
 			if (nextYpos > this->points[i].position.y) {
 				this->points[i].position.y += sin(angle) * force;
 			}
@@ -103,5 +103,12 @@ void Terrain::display(sf::RenderWindow& window) {
 		c.setOrigin(5,5);
 		window.draw(c);
 	}
+	
+	//sf::ConvexShape road;
+	//road.setPointCount(points.getVertexCount());
+	//for (size_t i = 0; i < points.getVertexCount(); ++i) {
+	//	road.setPoint(i, points[i].position);
+	//}
 
+	//window.draw(road);
 }

@@ -12,7 +12,7 @@ int main()
 
     window.setFramerateLimit(60);
     
-    Terrain terrain(200, 8, window);
+    Terrain terrain(400, 5, window);
     Tank tank1(sf::Vector2f(width * 0.25f, 500), sf::Keyboard::Q);
     Tank tank2(sf::Vector2f(width * 0.75f, 500), sf::Keyboard::E);
 
@@ -44,6 +44,10 @@ int main()
         if (terrain.checkTerrainCollision(tank1.getRocketPositon())) {
             terrain.explosionEffect(tank1.getRocketPreviousPositon(), 40);
             tank1.resetRocket();
+        }
+        if (terrain.checkTerrainCollision(tank2.getRocketPositon())) {
+            terrain.explosionEffect(tank2.getRocketPreviousPositon(), 40);
+            tank2.resetRocket();
         }
 
 
