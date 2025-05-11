@@ -35,21 +35,41 @@ float Utils::distance(float x1, float y1, float x2, float y2) {
 float Utils::distance(sf::Vector2f a, sf::Vector2f b) {
 	return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
 }
-//
-//int Utils::constrain(int val, int min, int max) {
-//	if (val < min) {
-//		val = min;
-//	}
-//
-//	if (val > max) {
-//		val = max;
-//	}
-//
-//	return val;
-//}
-//
+
+int Utils::constrain(int val, int min, int max) {
+	if (val < min) {
+		val = min;
+	}
+
+	if (val > max) {
+		val = max;
+	}
+
+	return val;
+}
+float Utils::constrain(float val, float min, float max) {
+	if (val < min) {
+		val = min;
+	}
+
+	if (val > max) {
+		val = max;
+	}
+
+	return val;
+}
+
 float Utils::map(float value, float inMin, float inMax, float outMin, float outMax) {
 	return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
 
 
+float Utils::PI = 3.14159265f;
+
+float Utils::degreesToRadians(float degrees) {
+	return degrees * (PI / 180.f);
+}
+
+float Utils::radiansToDegrees(float radians) {
+	return radians * (180.f / PI);
+}

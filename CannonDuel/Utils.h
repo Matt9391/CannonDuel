@@ -17,11 +17,16 @@ public:
 	static void updateDt();
 	static float distance(float x1, float y1, float x2, float y2);
 	static float distance(sf::Vector2f a, sf::Vector2f b);
-	//static int constrain(int val, int min, int max);
+	static int constrain(int val, int min, int max);
+	static float constrain(float val, float min, float max);
 	static float map(float value, float inMin, float inMax, float outMin, float outMax);
+
+	static float degreesToRadians(float degrees);
+	static float radiansToDegrees(float radians);
 
 private:
 	static std::random_device rd;
 	static std::mt19937 gen;
+	static float PI;
 };
 

@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Terrain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Terrain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\PerlinNoise.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:PerlinNoise.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Rocket.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Rocket.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Tank.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Tank.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Rocket.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Rocket.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Tank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Tank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Terrain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Terrain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\PerlinNoise.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3921682-CA38-4975-BBDA-B8F33F1CE001}|CannonDuel.vcxproj|solutionrelative:PerlinNoise.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,6 +67,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Rocket.cpp",
+              "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Rocket.cpp",
+              "RelativeDocumentMoniker": "Rocket.cpp",
+              "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Rocket.cpp",
+              "RelativeToolTip": "Rocket.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-11T17:09:22.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rocket.h",
+              "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Rocket.h",
+              "RelativeDocumentMoniker": "Rocket.h",
+              "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Rocket.h",
+              "RelativeToolTip": "Rocket.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-11T17:06:25.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tank.cpp",
+              "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Tank.cpp",
+              "RelativeDocumentMoniker": "Tank.cpp",
+              "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Tank.cpp",
+              "RelativeToolTip": "Tank.cpp",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswGUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-11T15:50:17.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tank.h",
+              "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Tank.h",
+              "RelativeDocumentMoniker": "Tank.h",
+              "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Tank.h",
+              "RelativeToolTip": "Tank.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-11T15:32:20.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PerlinNoise.hpp",
               "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\PerlinNoise.hpp",
               "RelativeDocumentMoniker": "PerlinNoise.hpp",
@@ -58,70 +126,69 @@
               "RelativeToolTip": "PerlinNoise.hpp",
               "ViewState": "AgIAAIcBAAAAAAAAAAAWwJkBAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-09T19:48:17.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:48:17.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Utils.cpp",
               "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.cpp",
               "RelativeDocumentMoniker": "Utils.cpp",
               "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.cpp",
               "RelativeToolTip": "Utils.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-09T19:36:08.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Utils.h",
               "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.h",
               "RelativeDocumentMoniker": "Utils.h",
               "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Utils.h",
               "RelativeToolTip": "Utils.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-09T19:35:28.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Terrain.cpp",
               "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Terrain.cpp",
               "RelativeDocumentMoniker": "Terrain.cpp",
               "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Terrain.cpp",
               "RelativeToolTip": "Terrain.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-09T19:27:52.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Terrain.h",
               "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Terrain.h",
               "RelativeDocumentMoniker": "Terrain.h",
               "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\Terrain.h",
               "RelativeToolTip": "Terrain.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-09T19:25:07.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-09T19:23:18.437Z",
               "EditorCaption": ""
