@@ -12,7 +12,7 @@ int main()
 
     window.setFramerateLimit(60);
     
-    Terrain terrain(400, 5, window);
+    Terrain terrain(false,300, 8, window);
     Tank tank1(sf::Vector2f(width * 0.25f, 500), sf::Keyboard::Q);
     Tank tank2(sf::Vector2f(width * 0.75f, 500), sf::Keyboard::E);
 

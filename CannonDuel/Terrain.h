@@ -5,7 +5,7 @@
 class Terrain
 {
 public:
-	Terrain(int numOfPoints, int smoothness, sf::RenderWindow& window);
+	Terrain(bool filled,int numOfPoints, int smoothness, sf::RenderWindow& window);
 
 	void explosionEffect(sf::Vector2f explosionPos, int force);
 	bool checkTerrainCollision(sf::Vector2f otherPosition);
@@ -15,8 +15,11 @@ private:
 
 	void UpdateEdgePoints();
 
+	bool filled;
 
 	std::vector<sf::Vertex> edgePoints;
+	sf::VertexArray movedPoints;
+	std::vector<sf::CircleShape> exploPoints;
 
 	int numOfPoints;
 	sf::VertexArray points;

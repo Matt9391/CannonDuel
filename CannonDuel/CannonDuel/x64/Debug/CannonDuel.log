@@ -1,17 +1,16 @@
 ﻿  Terrain.cpp
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(10,12): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(18,17): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(20,34): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(21,34): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(29,15): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244: 'argomento': conversione da 'T' a 'T'. Possibile perdita di dati.
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:         with
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:         [
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:             T=unsigned int
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:         ]
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:         and
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:         [
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:             T=float
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(41,57): warning C4244:         ]
-E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(49,21): warning C4244: '=': conversione da 'float' a 'int'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(11,12): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(20,17): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(22,34): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(23,34): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(32,15): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244: 'argomento': conversione da 'T' a 'T'. Possibile perdita di dati.
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:         with
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:         [
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:             T=unsigned int
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:         ]
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:         and
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:         [
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:             T=float
+E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\Terrain.cpp(46,57): warning C4244:         ]
   CannonDuel.vcxproj -> E:\Informatica\GitHubRepos\CannonDuel\CannonDuel\x64\Debug\CannonDuel.exe
