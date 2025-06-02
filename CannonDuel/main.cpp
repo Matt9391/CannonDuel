@@ -13,8 +13,9 @@ int main()
     window.setFramerateLimit(60);
     
     Terrain terrain(false,300, 8, window);
-    Tank tank1(sf::Vector2f(width * 0.25f, 500), sf::Keyboard::Q);
-    Tank tank2(sf::Vector2f(width * 0.75f, 500), sf::Keyboard::E);
+    sf::Vector2f screenDimensions(width, height);
+    Tank tank1(sf::Vector2f(width * 0.25f, 500), sf::Keyboard::Q, screenDimensions);
+    Tank tank2(sf::Vector2f(width * 0.75f, 500), sf::Keyboard::E, screenDimensions);
 
     while (window.isOpen())
     {
@@ -39,7 +40,15 @@ int main()
 
         tank1.update();
         tank2.update();
+        tank1.tankCollision(tank2);
+        tank2.tankCollision(tank1);
 
+        if (tank1.getLives() == 0) {
+            std::cout << "blue winss" << std::endl;
+        }
+        if (tank2.getLives() == 0) {
+            std::cout << "red winss" << std::endl;
+        }
 
         if (terrain.checkTerrainCollision(tank1.getRocketPositon())) {
             terrain.explosionEffect(tank1.getRocketPreviousPositon(), 40);

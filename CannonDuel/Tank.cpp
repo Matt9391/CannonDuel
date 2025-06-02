@@ -4,8 +4,9 @@
 #include "Tank.h"
 
 
-Tank::Tank(sf::Vector2f spawnPosition, sf::Keyboard::Key key) :
+Tank::Tank(sf::Vector2f spawnPosition, sf::Keyboard::Key key, sf::Vector2f screenBounds) :
 	position(spawnPosition),
+	size(100, 50),
 	velocity(sf::Vector2f(0, 0)),
 	gravity(9.81f),
 	gravityEnable(true),
@@ -18,7 +19,10 @@ Tank::Tank(sf::Vector2f spawnPosition, sf::Keyboard::Key key) :
 	shootForce(0.f),
 	angleShootBar(0.f),
 	swingDir(-1),
-	rocket(nullptr)
+	rocket(nullptr),
+	powerShow(sf::Quads, 4),
+	lives(3),
+	screenBounds(screenBounds)
 	{
 		this->hitBox.setPosition(this->position);
 		this->hitBox.setSize(sf::Vector2f(100, 50));
@@ -30,12 +34,17 @@ Tank::Tank(sf::Vector2f spawnPosition, sf::Keyboard::Key key) :
 		this->shootBar.setOrigin(0, 10);
 		this->shootBar.setFillColor(sf::Color(50, 50, 255));
 
-		this->cooldownBar.setRadius(1);
-		this->cooldownBar.setPointCount(100);
-		this->cooldownBar.setPosition(this->position);
-		this->cooldownBar.setScale(50.f, 5.f);
-		this->cooldownBar.setFillColor(sf::Color(100, 100, 100));
-		this->cooldownBar.setOrigin(1, 1);
+		this->cooldownBar.setSize(sf::Vector2f(100.f, 10.f));
+		this->cooldownBar.setOrigin(0, 5);
+		sf::Vector2f newBarPos(this->position.x - 50.f, this->position.y + 15);
+		this->cooldownBar.setPosition(newBarPos);
+		this->cooldownBar.setFillColor(sf::Color(200, 200, 200));
+
+		this->setPowerShowPosition();
+
+		this->powerIndicator.setSize(sf::Vector2f(2.f, 10.f));
+		this->powerIndicator.setPosition(this->position.x - 50.f, this->position.y);
+		this->powerIndicator.setFillColor(sf::Color::White);
 	}
 
 void Tank::update() {
@@ -66,7 +75,7 @@ void Tank::update() {
 										this->position.y + this->shootBar.getSize().x * sin(angle)
 									  );
 
-			this->rocket = new Rocket(angle, this->shootForce, spawnPosition);
+			this->rocket = new Rocket(angle, this->shootForce, spawnPosition, this->screenBounds);
 			
 			this->shootForce = 0.f;
 		}
@@ -110,20 +119,52 @@ void Tank::resetRocket() {
 	this->rocket = nullptr;
 }
 
+
+bool Tank::tankCollision(Tank& tk) {
+	if (this->rocket == nullptr) {
+		return false;
+	}
+	if ((*this->rocket).tankCollision(tk)) {
+		tk.reduceLife();
+		return true;
+	}
+
+	return false;
+}
+
+void Tank::reduceLife() {
+	if (this->lives > 0) {
+		this->lives--;
+	}
+	
+}
+
+int Tank::getLives() {
+	return this->lives; 
+}
+
 void Tank::display(sf::RenderWindow& window) {
 	this->hitBox.setPosition(this->position);
 	this->shootBar.setPosition(this->position);
-	this->cooldownBar.setPosition(this->position);
+	sf::Vector2f newBarPos(this->position.x - 50.f, this->position.y + 15);
+	this->cooldownBar.setPosition(newBarPos);
+	this->setPowerShowPosition();
+
+	float xPowerIndicator = Utils::map(this->shootForce, 0.f, 20.f, -50.f, 50.f);
+	this->powerIndicator.setPosition(this->position.x + xPowerIndicator, this->position.y);
 
 	window.draw(this->hitBox);
 	window.draw(this->shootBar);
 	window.draw(this->cooldownBar);
+	window.draw(this->powerShow);
+	window.draw(this->powerIndicator);
+	this->showLives(window);
 	
-	sf::CircleShape c(5);
-	c.setFillColor(sf::Color::Green);
-	c.setPosition(this->position);
-	c.setOrigin(5, 5);
-	window.draw(c);
+	//sf::CircleShape c(5);
+	//c.setFillColor(sf::Color::Green);
+	//c.setPosition(this->position);
+	//c.setOrigin(5, 5);
+	//window.draw(c);
 
 	if (this->rocket) {
 		(*this->rocket).display(window);
@@ -145,8 +186,11 @@ void Tank::move() {
 }
 
 void Tank::shootCooldown() {
-	float xScaleMap = Utils::map(this->cooldownTimer, 0.f, this->cooldownDuration, 0.f, 50.f);
-	this->cooldownBar.setScale(xScaleMap, 5.f);
+
+	this->cooldownTimer = Utils::constrain(this->cooldownTimer, 0.f, 1.f);
+
+	float xScaleMap = Utils::map(this->cooldownTimer, 0.f, this->cooldownDuration, 100.f, 0.f);
+	this->cooldownBar.setSize(sf::Vector2f(xScaleMap, 5.f));
 
 	if (this->cooldownTimer >= this->cooldownDuration) {
 		this->canShoot = true;
@@ -173,6 +217,48 @@ void Tank::handleRocket() {
 		return;
 	}
 
+	if ((*this->rocket).toRemove) {
+		this->resetRocket();
+		return;
+	}
+
 	(*this->rocket).update();
 
+}
+
+void Tank::setPowerShowPosition(){
+	//BAR POWER LEVEL SHOWER 
+	// Top-left
+	this->powerShow[0].position = sf::Vector2f(this->position.x - 50.f +1, this->position.y);
+	this->powerShow[0].color = sf::Color::Red;
+
+	// Top-right
+	this->powerShow[1].position = sf::Vector2f(this->position.x + 50.f, this->position.y);
+	this->powerShow[1].color = sf::Color::Green;
+
+	// Bottom-right
+	this->powerShow[2].position = sf::Vector2f(this->position.x + 50.f, this->position.y + 10.f);
+	this->powerShow[2].color = sf::Color::Green;
+
+	// Bottom-left
+	this->powerShow[3].position = sf::Vector2f(this->position.x - 50.f +1, this->position.y + 10.f);
+	this->powerShow[3].color = sf::Color::Red;
+}
+
+void Tank::showLives(sf::RenderWindow& window) {
+	sf::CircleShape life(10.f);
+
+	float incr = this->size.x / 3.f;
+
+	for (int i = 0; i < 3; i++) {
+		if (i < lives) {
+			life.setFillColor(sf::Color::Green);
+		}else{
+			life.setFillColor(sf::Color(50,50,50));
+		}
+		
+		life.setPosition(this->position.x - 50.f + 7.5f + i * incr, this->position.y - 25.f);
+		window.draw(life);
+
+	}
 }
