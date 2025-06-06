@@ -74,8 +74,7 @@
               "RelativeToolTip": "Rocket.cpp",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-11T17:09:22.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T17:09:22.24Z"
             },
             {
               "$type": "Document",
@@ -87,8 +86,7 @@
               "RelativeToolTip": "Rocket.h",
               "ViewState": "AgIAAAQAAAAAAAAAAAAswAgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T17:06:25.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T17:06:25.656Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "Tank.cpp",
               "ViewState": "AgIAAIIAAAAAAAAAAAAAAI0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-11T15:50:17.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T15:50:17.702Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "RelativeToolTip": "Tank.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T15:32:20.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T15:32:20.841Z"
             },
             {
               "$type": "Document",
@@ -138,8 +134,7 @@
               "RelativeToolTip": "Utils.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-09T19:36:08.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:36:08.258Z"
             },
             {
               "$type": "Document",
@@ -151,8 +146,7 @@
               "RelativeToolTip": "Utils.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-09T19:35:28.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:35:28.488Z"
             },
             {
               "$type": "Document",
@@ -164,8 +158,7 @@
               "RelativeToolTip": "Terrain.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAGIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-09T19:27:52.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:27:52.269Z"
             },
             {
               "$type": "Document",
@@ -187,7 +180,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "E:\\Informatica\\GitHubRepos\\CannonDuel\\CannonDuel\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-09T19:23:18.437Z",
               "EditorCaption": ""
